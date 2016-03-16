@@ -34,213 +34,212 @@ var urlMappings = {
 };
 
 var testCases = [
-    //{
-    //    user: {
-    //        username: 'elimaeda',
-    //        password: 'gascon655'
-    //    },
-    //    endpoints: [
-    //        {name: 'listCategories', access: true},
-    //        {name: 'listProducts', access: true},
-    //        {name: 'listSKUs', access: true},
-    //        {name: 'listRegularOrderGuides', access: true},
-    //        {name: 'listTrackingOrderGuides', access: true},
-    //        {name: 'listFarmOrderGuides', access: true},
-    //        {name: 'listFarms', access: true},
-    //        {name: 'listDistributors', access: true},
-    //        {name: 'listCustomers', access: true},
-    //        {name: 'listUsers', access: true},
-    //        {name: 'listRegularOrders', access: true},
-    //        {name: 'listTrackingOrders', access: true},
-    //        {name: 'listFarmOrders', access: true},
-    //        {name: 'listRegularOrderReports', access: true},
-    //        {name: 'listTrackingOrderReports', access: true},
-    //        {name: 'listFarmOrderReports', access: true},
-    //        {name: 'listOrderNotificationRules', access: true},
-    //        {name: 'notificationEmailSignature', access: true},
-    //        {name: 'listReportTemplates', access: true}
-    //    ]
-    //}, {
-    //    user: {
-    //        username: 'hernan@cust',
-    //        password: 'password'
-    //    },
-    //    features: {
-    //        admin: false,
-    //        canCreateGuides: false,
-    //        canGenerateOrderReports: false,
-    //        canLockGuideItemPrices: false,
-    //        canManageCustomers: false,
-    //        canPlaceTrackingOrders: false,
-    //        canSetGuideItemSellFormulaAndPrice: false,
-    //        canSetGuideResellFormula: false,
-    //        canSetGuideSellFormula: false,
-    //        canSetOrderItemSellPrice: false
-    //    },
-    //    endpoints: [
-    //        {name: 'listCategories', access: false},
-    //        {name: 'listProducts', access: false},
-    //        {name: 'listSKUs', access: false},
-    //        {name: 'listRegularOrderGuides', access: false},
-    //        {name: 'listTrackingOrderGuides', access: false},
-    //        {name: 'listFarmOrderGuides', access: false},
-    //        {name: 'listFarms', access: false},
-    //        {name: 'listDistributors', access: true},
-    //        {name: 'listCustomers', access: true},
-    //        {name: 'listUsers', access: false},
-    //        {name: 'listRegularOrders', access: true},
-    //        {name: 'listTrackingOrders', access: true},
-    //        {name: 'listFarmOrders', access: true},
-    //        {name: 'listRegularOrderReports', access: false},
-    //        {name: 'listTrackingOrderReports', access: false},
-    //        {name: 'listFarmOrderReports', access: false},
-    //        {name: 'listOrderNotificationRules', access: false},
-    //        {name: 'notificationEmailSignature', access: false},
-    //        {name: 'listReportTemplates', access: false}
-    //    ]
-    //}, {
-    //    user: {
-    //        username: 'hernan@cust',
-    //        password: 'password'
-    //    },
-    //    features: {
-    //        admin: false,
-    //        canCreateGuides: true,
-    //        canGenerateOrderReports: true,
-    //        canLockGuideItemPrices: true,
-    //        canManageCustomers: true,
-    //        canPlaceTrackingOrders: true,
-    //        canSetGuideItemSellFormulaAndPrice: true,
-    //        canSetGuideResellFormula: true,
-    //        canSetGuideSellFormula: true,
-    //        canSetOrderItemSellPrice: true
-    //    },
-    //    endpoints: [
-    //        {name: 'listCategories', access: false},
-    //        {name: 'listProducts', access: false},
-    //        {name: 'listSKUs', access: false},
-    //        {name: 'listRegularOrderGuides', access: false},
-    //        {name: 'listTrackingOrderGuides', access: false},
-    //        {name: 'listFarmOrderGuides', access: false},
-    //        {name: 'listFarms', access: false},
-    //        {name: 'listDistributors', access: true},
-    //        {name: 'listCustomers', access: true},
-    //        {name: 'listUsers', access: false},
-    //        {name: 'listRegularOrders', access: true},
-    //        {name: 'listTrackingOrders', access: true},
-    //        {name: 'listFarmOrders', access: true},
-    //        {name: 'listRegularOrderReports', access: true},
-    //        {name: 'listTrackingOrderReports', access: true},
-    //        {name: 'listFarmOrderReports', access: true},
-    //        {name: 'listOrderNotificationRules', access: false},
-    //        {name: 'notificationEmailSignature', access: false},
-    //        {name: 'listReportTemplates', access: true}
-    //    ]
-    //}, {
-    //    user: {
-    //        username: 'hernan@cust',
-    //        password: 'password'
-    //    },
-    //    features: {
-    //        admin: true,
-    //        canCreateGuides: false,
-    //        canGenerateOrderReports: false,
-    //        canLockGuideItemPrices: false,
-    //        canManageCustomers: false,
-    //        canPlaceTrackingOrders: false,
-    //        canSetGuideItemSellFormulaAndPrice: false,
-    //        canSetGuideResellFormula: false,
-    //        canSetGuideSellFormula: false,
-    //        canSetOrderItemSellPrice: false
-    //    },
-    //    endpoints: [
-    //        {name: 'listCategories', access: false},
-    //        {name: 'listProducts', access: true},
-    //        {name: 'listSKUs', access: true},
-    //        {name: 'listRegularOrderGuides', access: true},
-    //        {name: 'listTrackingOrderGuides', access: true},
-    //        {name: 'listFarmOrderGuides', access: true},
-    //        {name: 'listFarms', access: true},
-    //        {name: 'listDistributors', access: true},
-    //        {name: 'listCustomers', access: true},
-    //        {name: 'listUsers', access: false},
-    //        {name: 'listRegularOrders', access: true},
-    //        {name: 'listTrackingOrders', access: true},
-    //        {name: 'listFarmOrders', access: true},
-    //        {name: 'listRegularOrderReports', access: false},
-    //        {name: 'listTrackingOrderReports', access: false},
-    //        {name: 'listFarmOrderReports', access: false},
-    //        {name: 'listOrderNotificationRules', access: false},
-    //        {name: 'notificationEmailSignature', access: false},
-    //        {name: 'listReportTemplates', access: false}
-    //    ]
-    //}, {
-    //    user: {
-    //        username: 'hernan@dist',
-    //        password: 'password'
-    //    },
-    //    endpoints: [
-    //        {name: 'listCategories', access: false},
-    //        {name: 'listProducts', access: true},
-    //        {name: 'listSKUs', access: true},
-    //        {name: 'listRegularOrderGuides', access: false},
-    //        {name: 'listTrackingOrderGuides', access: false},
-    //        {name: 'listFarmOrderGuides', access: false},
-    //        {name: 'listFarms', access: true},
-    //        {name: 'listDistributors', access: true},
-    //        {name: 'listCustomers', access: false},
-    //        {name: 'listUsers', access: false},
-    //        {name: 'listRegularOrders', access: true},
-    //        {name: 'listTrackingOrders', access: true},
-    //        {name: 'listFarmOrders', access: true},
-    //        {name: 'listRegularOrderReports', access: true},
-    //        {name: 'listTrackingOrderReports', access: true},
-    //        {name: 'listFarmOrderReports', access: true},
-    //        {name: 'listOrderNotificationRules', access: false},
-    //        {name: 'notificationEmailSignature', access: false},
-    //        {name: 'listReportTemplates', access: true}
-    //    ]
-    //}, {
-    //    user: {
-    //        username: 'hernan@farm',
-    //        password: 'password'
-    //    },
-    //    features: {
-    //        admin: false,
-    //        canCreateCustomers: false,
-    //        canCreateGuides: false,
-    //        canCreateProducts: false,
-    //        canCreateSkus: false,
-    //        canGenerateOrderReports: false,
-    //        canSetGuideItemResellFormulaAndPrice: false,
-    //        canSetGuideItemSellFormulaAndPrice: false,
-    //        canSetSkuBasePrice: false,
-    //        farmHub: false,
-    //        managedFarms: []
-    //    },
-    //    endpoints: [
-    //        {name: 'listCategories', access: false},
-    //        {name: 'listProducts', access: true},
-    //        {name: 'listSKUs', access: false},
-    //        {name: 'listRegularOrderGuides', access: true},
-    //        {name: 'listTrackingOrderGuides', access: true},
-    //        {name: 'listFarmOrderGuides', access: true},
-    //        {name: 'listFarms', access: true},
-    //        {name: 'listDistributors', access: true},
-    //        {name: 'listCustomers', access: true},
-    //        {name: 'listUsers', access: false},
-    //        {name: 'listRegularOrders', access: true},
-    //        {name: 'listTrackingOrders', access: true},
-    //        {name: 'listFarmOrders', access: true},
-    //        {name: 'listRegularOrderReports', access: false},
-    //        {name: 'listTrackingOrderReports', access: false},
-    //        {name: 'listFarmOrderReports', access: false},
-    //        {name: 'listOrderNotificationRules', access: false},
-    //        {name: 'notificationEmailSignature', access: false},
-    //        {name: 'listReportTemplates', access: false}
-    //    ]
-    //}, {
     {
+        user: {
+            username: 'elimaeda',
+            password: 'gascon655'
+        },
+        endpoints: [
+            {name: 'listCategories', access: true},
+            {name: 'listProducts', access: true},
+            {name: 'listSKUs', access: true},
+            {name: 'listRegularOrderGuides', access: true},
+            {name: 'listTrackingOrderGuides', access: true},
+            {name: 'listFarmOrderGuides', access: true},
+            {name: 'listFarms', access: true},
+            {name: 'listDistributors', access: true},
+            {name: 'listCustomers', access: true},
+            {name: 'listUsers', access: true},
+            {name: 'listRegularOrders', access: true},
+            {name: 'listTrackingOrders', access: true},
+            {name: 'listFarmOrders', access: true},
+            {name: 'listRegularOrderReports', access: true},
+            {name: 'listTrackingOrderReports', access: true},
+            {name: 'listFarmOrderReports', access: true},
+            {name: 'listOrderNotificationRules', access: true},
+            {name: 'notificationEmailSignature', access: true},
+            {name: 'listReportTemplates', access: true}
+        ]
+    }, {
+        user: {
+            username: 'hernan@cust',
+            password: 'password'
+        },
+        features: {
+            admin: false,
+            canCreateGuides: false,
+            canGenerateOrderReports: false,
+            canLockGuideItemPrices: false,
+            canManageCustomers: false,
+            canPlaceTrackingOrders: false,
+            canSetGuideItemSellFormulaAndPrice: false,
+            canSetGuideResellFormula: false,
+            canSetGuideSellFormula: false,
+            canSetOrderItemSellPrice: false
+        },
+        endpoints: [
+            {name: 'listCategories', access: false},
+            {name: 'listProducts', access: false},
+            {name: 'listSKUs', access: false},
+            {name: 'listRegularOrderGuides', access: false},
+            {name: 'listTrackingOrderGuides', access: false},
+            {name: 'listFarmOrderGuides', access: false},
+            {name: 'listFarms', access: false},
+            {name: 'listDistributors', access: true},
+            {name: 'listCustomers', access: true},
+            {name: 'listUsers', access: false},
+            {name: 'listRegularOrders', access: true},
+            {name: 'listTrackingOrders', access: true},
+            {name: 'listFarmOrders', access: true},
+            {name: 'listRegularOrderReports', access: false},
+            {name: 'listTrackingOrderReports', access: false},
+            {name: 'listFarmOrderReports', access: false},
+            {name: 'listOrderNotificationRules', access: false},
+            {name: 'notificationEmailSignature', access: false},
+            {name: 'listReportTemplates', access: false}
+        ]
+    }, {
+        user: {
+            username: 'hernan@cust',
+            password: 'password'
+        },
+        features: {
+            admin: false,
+            canCreateGuides: true,
+            canGenerateOrderReports: true,
+            canLockGuideItemPrices: true,
+            canManageCustomers: true,
+            canPlaceTrackingOrders: true,
+            canSetGuideItemSellFormulaAndPrice: true,
+            canSetGuideResellFormula: true,
+            canSetGuideSellFormula: true,
+            canSetOrderItemSellPrice: true
+        },
+        endpoints: [
+            {name: 'listCategories', access: false},
+            {name: 'listProducts', access: false},
+            {name: 'listSKUs', access: false},
+            {name: 'listRegularOrderGuides', access: false},
+            {name: 'listTrackingOrderGuides', access: false},
+            {name: 'listFarmOrderGuides', access: false},
+            {name: 'listFarms', access: false},
+            {name: 'listDistributors', access: true},
+            {name: 'listCustomers', access: true},
+            {name: 'listUsers', access: false},
+            {name: 'listRegularOrders', access: true},
+            {name: 'listTrackingOrders', access: true},
+            {name: 'listFarmOrders', access: true},
+            {name: 'listRegularOrderReports', access: true},
+            {name: 'listTrackingOrderReports', access: true},
+            {name: 'listFarmOrderReports', access: true},
+            {name: 'listOrderNotificationRules', access: false},
+            {name: 'notificationEmailSignature', access: false},
+            {name: 'listReportTemplates', access: true}
+        ]
+    }, {
+        user: {
+            username: 'hernan@cust',
+            password: 'password'
+        },
+        features: {
+            admin: true,
+            canCreateGuides: false,
+            canGenerateOrderReports: false,
+            canLockGuideItemPrices: false,
+            canManageCustomers: false,
+            canPlaceTrackingOrders: false,
+            canSetGuideItemSellFormulaAndPrice: false,
+            canSetGuideResellFormula: false,
+            canSetGuideSellFormula: false,
+            canSetOrderItemSellPrice: false
+        },
+        endpoints: [
+            {name: 'listCategories', access: false},
+            {name: 'listProducts', access: true},
+            {name: 'listSKUs', access: true},
+            {name: 'listRegularOrderGuides', access: false},
+            {name: 'listTrackingOrderGuides', access: false},
+            {name: 'listFarmOrderGuides', access: false},
+            {name: 'listFarms', access: true},
+            {name: 'listDistributors', access: true},
+            {name: 'listCustomers', access: true},
+            {name: 'listUsers', access: false},
+            {name: 'listRegularOrders', access: true},
+            {name: 'listTrackingOrders', access: true},
+            {name: 'listFarmOrders', access: true},
+            {name: 'listRegularOrderReports', access: false},
+            {name: 'listTrackingOrderReports', access: false},
+            {name: 'listFarmOrderReports', access: false},
+            {name: 'listOrderNotificationRules', access: false},
+            {name: 'notificationEmailSignature', access: false},
+            {name: 'listReportTemplates', access: false}
+        ]
+    }, {
+        user: {
+            username: 'hernan@dist',
+            password: 'password'
+        },
+        endpoints: [
+            {name: 'listCategories', access: false},
+            {name: 'listProducts', access: true},
+            {name: 'listSKUs', access: true},
+            {name: 'listRegularOrderGuides', access: false},
+            {name: 'listTrackingOrderGuides', access: false},
+            {name: 'listFarmOrderGuides', access: false},
+            {name: 'listFarms', access: true},
+            {name: 'listDistributors', access: true},
+            {name: 'listCustomers', access: false},
+            {name: 'listUsers', access: false},
+            {name: 'listRegularOrders', access: true},
+            {name: 'listTrackingOrders', access: true},
+            {name: 'listFarmOrders', access: true},
+            {name: 'listRegularOrderReports', access: true},
+            {name: 'listTrackingOrderReports', access: true},
+            {name: 'listFarmOrderReports', access: true},
+            {name: 'listOrderNotificationRules', access: false},
+            {name: 'notificationEmailSignature', access: false},
+            {name: 'listReportTemplates', access: true}
+        ]
+    }, {
+        user: {
+            username: 'hernan@farm',
+            password: 'password'
+        },
+        features: {
+            admin: false,
+            canCreateCustomers: false,
+            canCreateGuides: false,
+            canCreateProducts: false,
+            canCreateSkus: false,
+            canGenerateOrderReports: false,
+            canSetGuideItemResellFormulaAndPrice: false,
+            canSetGuideItemSellFormulaAndPrice: false,
+            canSetSkuBasePrice: false,
+            farmHub: false,
+            managedFarms: []
+        },
+        endpoints: [
+            {name: 'listCategories', access: false},
+            {name: 'listProducts', access: true},
+            {name: 'listSKUs', access: false},
+            {name: 'listRegularOrderGuides', access: false},
+            {name: 'listTrackingOrderGuides', access: false},
+            {name: 'listFarmOrderGuides', access: false},
+            {name: 'listFarms', access: true},
+            {name: 'listDistributors', access: true},
+            {name: 'listCustomers', access: true},
+            {name: 'listUsers', access: false},
+            {name: 'listRegularOrders', access: true},
+            {name: 'listTrackingOrders', access: true},
+            {name: 'listFarmOrders', access: true},
+            {name: 'listRegularOrderReports', access: false},
+            {name: 'listTrackingOrderReports', access: false},
+            {name: 'listFarmOrderReports', access: false},
+            {name: 'listOrderNotificationRules', access: false},
+            {name: 'notificationEmailSignature', access: false},
+            {name: 'listReportTemplates', access: false}
+        ]
+    }, {
         user: {
             username: 'hernan@farm',
             password: 'password'
@@ -301,9 +300,9 @@ var testCases = [
             {name: 'listCategories', access: false},
             {name: 'listProducts', access: true},
             {name: 'listSKUs', access: false},
-            {name: 'listRegularOrderGuides', access: true},
-            {name: 'listTrackingOrderGuides', access: true},
-            {name: 'listFarmOrderGuides', access: true},
+            {name: 'listRegularOrderGuides', access: false},
+            {name: 'listTrackingOrderGuides', access: false},
+            {name: 'listFarmOrderGuides', access: false},
             {name: 'listFarms', access: true},
             {name: 'listDistributors', access: true},
             {name: 'listCustomers', access: true},
